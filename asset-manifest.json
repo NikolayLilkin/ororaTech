@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ororaTech/static/css/main.1865fdaf.css",
+    "main.js": "/ororaTech/static/js/main.c7d3c190.js",
+    "index.html": "/ororaTech/index.html",
+    "main.1865fdaf.css.map": "/ororaTech/static/css/main.1865fdaf.css.map",
+    "main.c7d3c190.js.map": "/ororaTech/static/js/main.c7d3c190.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1865fdaf.css",
+    "static/js/main.c7d3c190.js"
+  ]
+}
