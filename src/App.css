@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
+.map {
+  width: 100%;
+  height:100vh;
+}
+.ol-popup {
+  position: absolute;
+  background-color: #163143;
+  color: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  left: -50px;
+  min-width: 200px;
+}
+.ol-popup:after, .ol-popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ol-popup:after {
+  border-top-color: #163143;
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.ol-popup:before {
+  border-top-color: #cccccc;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
+}
+.ol-popup-closer {
+  margin-top:2px;
+  text-decoration: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  display: block;
+  margin: 1px;
+  padding: 0;
   color: white;
+  text-decoration: none;
+  font-size: inherit;
+  text-align: center;
+  height: 1.375em;
+  width: 1.375em;
+  line-height: .4em;
+  background-color: #163143;
+  border: none;
 }
-
-.App-link {
-  color: #61dafb;
+.ol-popup-closer:after {
+  content: "x";
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+  font-family: sans-serif;
+  margin: 5px,0px,5px,0px;
+}
+.ol-control button{
+  background-color: #163143;
+}
+.menu {
+  top: 65px;
+  left: .5em;
+}
+.ol-popup.diagram:after {
+  content:none;
+}
+.ol-popup.diagram:before {
+  content:none;
+}
+#diagram {
+  position : 'absolute';
+  top : 200px;
+  left : .5em;
+  background-Color: '#163143';
+  min-width: fit-content;
+  min-height: fit-content;
+}
+.ol-popup.widget:after {
+  content:none;
+}
+.ol-popup.widget:before {
+  content:none;
+}
+#widget {
+  position : 'absolute';
+  top : 150px;
+  left : .5em;
+  background-Color: '#163143';
+  max-height: 20px;
+  max-width: fit-content;
 }
